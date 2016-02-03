@@ -43,6 +43,11 @@ module Urbanairship
         tag_params
       end
 
+      # Select a single named user
+      def named_user(uuid)
+        { named_user: uuid }
+      end
+
       # Select a single alias
       def alias(an_alias)
         { alias: an_alias }
